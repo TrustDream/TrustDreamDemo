@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.trust.rxjavademo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#c4c4c4"
+                android:onClick="test"
+                android:text="button"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/log_shu_zu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c4c4c4"
+                android:gravity="center_horizontal"
+                android:text="打印字符串"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/img_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c1c1c1"
+                android:text="根据id 显示图片"/>
+
+
+            <ImageView
+                android:id="@+id/glide_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/glide_img_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/glide_img_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/glide_img_rounded_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/glide_img_circle_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/glide_img_rounded_corners_gif"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            
+            <ImageView
+                android:id="@+id/glide_img_mo_hu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/glide_img_mo_hu_gif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/rxbinding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rxbinding"/>
+
+
+            <Button
+                android:id="@+id/rxbing_fang_zhi_liuanxudianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="防止连续点击"/>
+
+            <ImageView
+                android:id="@+id/img_id_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <ImageView
+                android:id="@+id/takePicturesImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/takePictures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take pictures"/>
+
+            <Button
+                android:id="@+id/dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dialog"/>
+            <Button
+                android:id="@+id/bluetooch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bluetooch"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
