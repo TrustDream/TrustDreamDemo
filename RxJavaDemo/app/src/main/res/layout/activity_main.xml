@@ -130,7 +130,12 @@
                 android:id="@+id/bluetooch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="bluetooch"/>
+                android:text="Foundbluetooth"/>
+            <Button
+                android:id="@+id/intent_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="intent bluetooth"/>
         </LinearLayout>
 
 

@@ -99,7 +99,8 @@ import retrofit2.Retrofit;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    private Button logShuZuBtn ,idImgBtn , takePicturesBtn,dialogBtn;
+    private Button logShuZuBtn ,idImgBtn , takePicturesBtn,dialogBtn,bluetoothBtn
+            ,intentBluetoothBtn;
     ImageView imgIdImg , glideImg , glideCircle,glideRoundedCorners,gliderCircleGif
             ,gliderRoundedCornersGif,glideMoHu,glideMoHuGif,takePicturesImg;
     ImageButton imgBtn;
@@ -113,12 +114,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //bluetooch
     private BluetoothManager blueToothManger ;
     private BluetoothAdapter blueToothAdapter;
+
+    private String serviceUUID ,characteristicUUID ,address;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initView();
+        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+            Toast.makeText(this, "不支持4.0", Toast.LENGTH_SHORT).show();
+            finish();
+        }else
+        {
+            Toast.makeText(this, "支持4.0", Toast.LENGTH_SHORT).show();
+        }
+
         //监听电池电量
         this.registerReceiver(this.broadcastReceiver, new IntentFilter(
                 Intent.ACTION_BATTERY_CHANGED));
@@ -192,8 +204,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .load("http://img3.91.com/uploads/allimg/140331/32-140331164952.jpg")
                 .crossFade(1000)
                 .bitmapTransform(new RoundedCornersTransformation(this
-                        ,30,0,RoundedCornersTransformation.CornerType.ALL))
+                        ,30,0,RoundedCornersTransformation.CornerType.TOP))
                 .into(glideRoundedCorners);
+
 
         //圆图gif
         gliderCircleGif = (ImageView) findViewById(R.id.glide_img_circle_gif);
@@ -482,7 +495,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //dialog
         dialogBtn = (Button) findViewById(R.id.dialog);
         dialogBtn.setOnClickListener(this);
-
+        //bluetooth
+        bluetoothBtn = (Button) findViewById(R.id.bluetooch);
+        bluetoothBtn.setOnClickListener(this);
+        intentBluetoothBtn = (Button) findViewById(R.id.intent_bluetooth);
+        intentBluetoothBtn.setOnClickListener(this);
 
     }
 
@@ -657,9 +674,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this, "photo 为null", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+            case R.id.bluetooch:
+                doBluetooch();
+                break;
+            case R.id.intent_bluetooth:
+                obtain();
+                break;
         }
     }
+    public void obtain(){
 
+
+        BluetoothGattService service = blueToothGatt.getService(UUID.
+                fromString(serviceUUID));
+        BluetoothGattCharacteristic characteristic = service.getCharacteristic(UUID
+                .fromString(characteristicUUID));
+
+        characteristic.setValue(new byte[]{(byte) 0x128, (byte) 0x110, (byte) 0x163});
+//        characteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+        blueToothGatt.writeCharacteristic(characteristic);
+        blueToothGatt.readCharacteristic(characteristic);
+        Log.d(TAG, "obtain  writeCharacteristic: "+blueToothGatt.writeCharacteristic(characteristic));
+        Log.d(TAG, "obtain  readCharacteristic: "+blueToothGatt.readCharacteristic(characteristic));
+
+
+        BluetoothGattDescriptor descriptor = characteristic.
+                getDescriptor(UUID.fromString("00002902-0000-1000-8000-00805f9b34fb"));
+        descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
+        blueToothGatt.writeDescriptor(descriptor);
+    }
 
     private void verifyStoragePermissions(Activity activity) {
         int permissionWrite = ActivityCompat.checkSelfPermission(activity,
@@ -681,8 +725,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Bitmap bitmap = BitmapFactory.decodeStream(fis);
                             Log.d(TAG, "onActivityResult: bitmap1:"+bitmap.toString()
                             +"|bitmap 大小:"+(bitmap.getByteCount() / 1024 / 1024)+"m");
-
-
 
 
                             ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -714,10 +756,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        Log.d(TAG, "onActivityResult: requestCode"+requestCode+"|resultCode:"+resultCode+"|data"+data.toString());
         if(resultCode == 0)
         {
-            Toast.makeText(this, "你拒绝了", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "你拒绝了 bluetooth", Toast.LENGTH_SHORT).show();
             return;
         }
-        doBluetooch();
+
 
 
 
@@ -774,6 +816,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 blueToothNameList.add("name:"+device.getName());
                 Log.d(TAG, "doBluetooch: 已经配对的设备名称:"+device.getName()+"|address:"+
                 device.getAddress());
+
+                blueToothAdapter.cancelDiscovery();
+                address = device.getAddress();
+                BluetoothDevice b = blueToothAdapter.getRemoteDevice(address);
+                blueToothGatt = b.connectGatt(MainActivity.this,false,bluetoothGattCallback);
             }
         }else{
             Log.d(TAG, "doBluetooch: paireDevices,size = 0  没有已经配对的设备!");
@@ -789,6 +836,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         IntentFilter filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
         registerReceiver(blueTooth,filter);
         blueToothAdapter.startDiscovery();
+
     }
 
     public final BroadcastReceiver blueTooth = new BroadcastReceiver() {
@@ -797,10 +845,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String action =  intent.getAction();
             if(action.equals(BluetoothDevice.ACTION_FOUND)){
                 BluetoothDevice device =  intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                String name = device.getName();
                 Log.d(TAG, "onReceive  found bluetooth  device name :"+device.getName()+"|address:"
                         +device.getAddress());
+                Log.d("lhhh", "onReceive: "+name);
+                /*
                 if(device.getName().equals("小米note（QR）")){
-                    BluetoothDevice b = blueToothAdapter.getRemoteDevice(device.getAddress());
+                    blueToothAdapter.cancelDiscovery();
+                    address = device.getAddress();
+                    BluetoothDevice b = blueToothAdapter.getRemoteDevice(address);
+                    blueToothGatt = b.connectGatt(MainActivity.this,false,bluetoothGattCallback);
+                }
+                */
+                if(name.equals("Galaxy A7 (2016)"))
+                {
+                    blueToothAdapter.cancelDiscovery();
+                    address = device.getAddress();
+                    BluetoothDevice b = blueToothAdapter.getRemoteDevice(address);
                     blueToothGatt = b.connectGatt(MainActivity.this,false,bluetoothGattCallback);
                 }
             }
@@ -838,8 +899,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     broadcastUpdate(intentAction);
                     Log.i(TAG, "Connected to GATT server.");
                     // Attempts to discover services after successful connection.
-                    Log.i(TAG, "Attempting to start service discovery:" +
-                            blueToothGatt.discoverServices());
+                    Log.i(TAG, "Attempting to start service discovery:");
+                    blueToothGatt.discoverServices();
                 } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                     intentAction = ACTION_GATT_DISCONNECTED;
                     blueToothGatt.close();
@@ -861,29 +922,54 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Log.i(TAG, "Count is:" + gattServices.size());
             for (BluetoothGattService gattService : gattServices)
             {
-                Log.i(TAG, "gattService.getUuid():"+gattService.getUuid().toString());
-                Log.i(TAG, "UUID_SERVICE:"+UUID_SERVICE.toString());
-                if(gattService.getUuid().toString().equalsIgnoreCase(UUID_SERVICE.toString()))
-                {
+//                00001801-0000-1000-8000-00805f9b34fb
+
+
+//                Log.i(TAG, "UUID_SERVICE:"+UUID_SERVICE.toString());
+//                if(gattService.getUuid().toString().equalsIgnoreCase(UUID_SERVICE.toString()))
+//                {
                     List<BluetoothGattCharacteristic> gattCharacteristics =
                             gattService.getCharacteristics();
                     Log.i(TAG, "Count is:" + gattCharacteristics.size());
                     for (BluetoothGattCharacteristic gattCharacteristic :
                             gattCharacteristics)
                     {
-                        if(gattCharacteristic.getUuid().toString().equalsIgnoreCase(UUID_NOTIFY.toString()))
-                        {
+//                        if(gattCharacteristic.getUuid().toString().equalsIgnoreCase(UUID_NOTIFY.toString()))
+//                        {
+                            Log.i(TAG, "gattService.getUuid():"+gattService.getUuid().toString());
                             Log.i(TAG, "gattCharacteristic.getUuid().toString():"+gattCharacteristic.getUuid().toString());
-                            Log.i(TAG, "UUID_NOTIFY.toString()"+UUID_NOTIFY.toString());
+//                            Log.i(TAG, "UUID_NOTIFY.toString()"+UUID_NOTIFY.toString());
+                            serviceUUID = gattService.getUuid().toString();
+                            characteristicUUID = gattCharacteristic.getUuid().toString();
+
                             mNotifyCharacteristic = gattCharacteristic;
                             setCharacteristicNotification(gattCharacteristic, true);
+
                             broadcastUpdate(ACTION_GATT_SERVICES_DISCOVERED);
+
+
+                        BluetoothGattService service = blueToothGatt.getService(UUID.
+                                fromString("this is service"));
+                        BluetoothGattCharacteristic characteristic = service.getCharacteristic(UUID
+                                .fromString("this is characteristic"));
+
+
+                        characteristic.setValue(new byte[]{(byte) 0x128, (byte) 0x110, (byte) 0x163});
+//        characteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+                        blueToothGatt.writeCharacteristic(characteristic);
+//        blueToothGatt.readCharacteristic(characteristic);
+
+                        Log.d(TAG, "obtain  writeCharacteristic: "+blueToothGatt.writeCharacteristic(characteristic));
+//        Log.d(TAG, "obtain  readCharacteristic: "+blueToothGatt.readCharacteristic(characteristic));
+
                             return;
-                        }
-                    }
+//                        }
+//                    }
                 }
             }
         }
+
+
 
         public void setCharacteristicNotification(BluetoothGattCharacteristic characteristic,
                                                   boolean enabled) {
@@ -901,6 +987,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mBluetoothGatt.writeDescriptor(descriptor);
         }
         */
+            for(BluetoothGattDescriptor dp:characteristic.getDescriptors()) {
+                dp.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
+                blueToothGatt.writeDescriptor(dp);
+            }
         }
 
         @Override
@@ -938,20 +1028,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             Log.d(TAG, "onCharacteristicRead: ");
-            broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
-            super.onCharacteristicRead(gatt, characteristic, status);
+            if (status == BluetoothGatt.GATT_SUCCESS) {
+                broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
+            }
         }
 
         @Override
         public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             Log.d(TAG, "onCharacteristicWrite: ");
+
             super.onCharacteristicWrite(gatt, characteristic, status);
         }
 
         @Override
         public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
             Log.d(TAG, "onCharacteristicChanged: ");
-            super.onCharacteristicChanged(gatt, characteristic);
+            broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
         }
 
         @Override
@@ -1011,7 +1103,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int scale=intent.getIntExtra(BatteryManager.EXTRA_SCALE,0);
             int levelPercent = (int)(((float)level / scale) * 100);
 
-            Log.d(TAG, "onReceive: 电池电量:"+levelPercent+"%");
+//            Log.d(TAG, "onReceive: 电池电量:"+levelPercent+"%");
+//
+//            Log.d(TAG, "onReceive: bluetooth:"+intent.toString());
+
+            final String action = intent.getAction();
+            if (ACTION_GATT_CONNECTED.equals(action)) {
+
+
+                invalidateOptionsMenu();
+            } else if (ACTION_GATT_DISCONNECTED.equals(action)) {
+
+
+                invalidateOptionsMenu();
+
+            } else if (
+                    ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
+                // Show all the supported services and characteristics on the
+                // user interface.
+//                displayGattServices(mBluetoothLeService.getSupportedGattServices());
+            } else if (ACTION_DATA_AVAILABLE.equals(action)) {
+//                displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+            }
+
         }
     };
 
