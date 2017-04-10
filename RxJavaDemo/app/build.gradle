@@ -12,7 +12,8 @@ android {
         versionName "1.0"
 
         ndk {
-            moduleName "jary"         //生成的so名字
+            moduleName "helloJNI"         //生成的so名字
+            ldLibs "log"//实现__android_log_print
             abiFilters "armeabi", "armeabi-v7a", "x86"  //输出指定三种abi体系结构下的so库。
             stl "stlport_static"    //打开.c 的 debug , 下面第 4 点会讲到
         }
@@ -43,5 +44,4 @@ dependencies {
     compile 'jp.wasabeef:glide-transformations:2.0.0'
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile files('libs/mysdk.jar')
 }

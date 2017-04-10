@@ -5,8 +5,12 @@ package com.trust.rxjavademo.ndk;
  */
 public class JniTest {
     static {
-        System.loadLibrary("jary");
+        System.loadLibrary("helloJNI");
     }
     public native String getString();
+
+    public native void updateFile(String path);
+
+    public native int[] updateIntArray(int []data);
 
 }
