@@ -25,22 +25,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity android:name=".QuanXian.QuanXianActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".QuanXian.QuanXianActivity" />
         <activity android:name=".QuanXian.TipActivity" />
 
         <service android:name=".QuanXian.MonitorService" />
 
         <activity android:name=".ndk.JniActivity">
+
+        </activity>
+        <activity android:name=".ChooseActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".RxActivity" />
+        <activity android:name=".BlueToothActivity" />
+        <activity android:name=".QRActivity"></activity>
     </application>
 
 </manifest>
