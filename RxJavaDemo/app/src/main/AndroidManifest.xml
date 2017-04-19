@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.trust.rxjavademo">
+    package="com.trust.lhdemo">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -24,26 +24,34 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.Base">
         <activity android:name=".MainActivity" />
         <activity android:name=".QuanXian.QuanXianActivity" />
         <activity android:name=".QuanXian.TipActivity" />
 
         <service android:name=".QuanXian.MonitorService" />
 
-        <activity android:name=".ndk.JniActivity">
-
-        </activity>
-        <activity android:name=".ChooseActivity" >
+        <activity android:name=".ndk.JniActivity" />
+        <activity android:name=".ChooseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RxActivity" />
-        <activity android:name=".BlueToothActivity" />
-        <activity android:name=".QRActivity"></activity>
+        <activity android:name=".rxseries.RxActivity" />
+        <activity android:name=".bluetooth.BlueToothActivity" />
+        <activity android:name=".QRActivity" />
+        <activity android:name=".perssion.PerssionActivity" />
+        <activity android:name=".bluetooth.BlueDeviceActivity" />
+
+        <service android:name=".server.TrustServer" />
+
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".glide.GlideActivity" />
+        <activity android:name=".rxseries.RxJavaActivity" />
+        <activity android:name=".rxseries.RetrofitActivity" />
+        <activity android:name=".rxseries.RxBindingActivity"></activity>
     </application>
 
 </manifest>

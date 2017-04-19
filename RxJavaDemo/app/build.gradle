@@ -44,4 +44,7 @@ dependencies {
     compile 'jp.wasabeef:glide-transformations:2.0.0'
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
     compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile project(':erwmlib')
 }

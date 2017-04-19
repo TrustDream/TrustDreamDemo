@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.trust.rxjavademo.ndk.JniActivity">
+    tools:context="com.trust.lhdemo.ndk.JniActivity">
 
     <TextView
         android:id="@+id/jni_tv"

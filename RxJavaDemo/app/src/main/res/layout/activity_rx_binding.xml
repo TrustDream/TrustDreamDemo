@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.trust.lhdemo.rxseries.RxBindingActivity">
+
+
+    <Button
+        android:id="@+id/activity_rx_rxbinding_onclick"
+        android:text="rxbinding_onclick"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/activity_rx_rxbinding_long_onclick"
+        android:layout_marginTop="10dp"
+        android:text="rxbinding_long_onclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/activity_rx_rxbinding_anti_shake_onclick"
+        android:text="rxbinding_anti_shake_onclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="点击check box 按钮可点击"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/activity_rx_rxbinding_condition_checkbox_click"
+            android:text="选中即可点击按钮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/activity_rx_rxbinding_condition_btn_click"
+            android:text="Condition click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_rx_rxbinding_multiple_clicks"
+        android:text="Multiple clicks"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.trust.rxjavademo;
+package com.trust.lhdemo;
 
 import org.junit.Test;
 
