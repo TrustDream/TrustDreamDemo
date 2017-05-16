@@ -39,19 +39,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".rxseries.RxActivity" />
-        <activity android:name=".bluetooth.BlueToothActivity" />
-        <activity android:name=".QRActivity" />
-        <activity android:name=".perssion.PerssionActivity" />
-        <activity android:name=".bluetooth.BlueDeviceActivity" />
+        <activity android:name=".rxseries.RxActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".bluetooth.BlueToothActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".QRActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".perssion.PerssionActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".bluetooth.BlueDeviceActivity"
+            android:theme="@style/SwipeBack"/>
 
         <service android:name=".server.TrustServer" />
 
         <activity android:name=".BaseActivity" />
-        <activity android:name=".glide.GlideActivity" />
-        <activity android:name=".rxseries.RxJavaActivity" />
-        <activity android:name=".rxseries.RetrofitActivity" />
-        <activity android:name=".rxseries.RxBindingActivity"></activity>
+        <activity android:name=".glide.GlideActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".rxseries.RxJavaActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".rxseries.RetrofitActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".rxseries.RxBindingActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".viewPager.ViewPagerActivity"
+            android:theme="@style/SwipeBack"/>
+        <activity android:name=".RotateActivity"
+            android:theme="@style/SwipeBack"></activity>
     </application>
 
 </manifest>

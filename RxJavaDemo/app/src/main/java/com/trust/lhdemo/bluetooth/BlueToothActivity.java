@@ -22,6 +22,7 @@ import com.trust.lhdemo.BaseActivity;
 import com.trust.lhdemo.R;
 import com.trust.lhdemo.bean.BlueDeviceBean;
 import com.trust.lhdemo.perssion.PermissionUtils;
+import com.trust.lhdemo.swipebacklayout.app.SwipeBackActivity;
 import com.trust.lhdemo.tool.Config;
 import com.trust.lhdemo.tool.L;
 import com.trust.lhdemo.tool.RecyclerViewDivider;
@@ -31,7 +32,7 @@ import com.trust.lhdemo.view.StatusBar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlueToothActivity extends BaseActivity implements View.OnClickListener{
+public class BlueToothActivity extends SwipeBackActivity implements View.OnClickListener{
     private RecyclerView recyclerView;
     private BlueToothadapter blueToothadapter;
     private List<BlueDeviceBean> ml = new ArrayList<>();

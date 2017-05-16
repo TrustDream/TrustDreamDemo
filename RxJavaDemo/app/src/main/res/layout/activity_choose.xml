@@ -81,5 +81,17 @@
         android:text="Glide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_pager"
+            android:text="多动画pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_xuanzhuan"
+            android:text="卡片旋转"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

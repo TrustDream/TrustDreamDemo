@@ -10,12 +10,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.zxing.WriterException;
+import com.trust.lhdemo.swipebacklayout.app.SwipeBackActivity;
 import com.trust.lhdemo.tool.T;
 import com.trust.lhdemo.view.StatusBar;
 import com.zxing.activity.CaptureActivity;
 import com.zxing.encoding.EncodingHandler;
 
-public class QRActivity extends BaseActivity {
+public class QRActivity extends SwipeBackActivity {
     private Button scanningBtn,generateQrBtn,foundQrBtn;
     private final int Scann = 0;
 

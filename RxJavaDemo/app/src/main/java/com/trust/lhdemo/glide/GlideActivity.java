@@ -9,12 +9,13 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.trust.lhdemo.BaseActivity;
 import com.trust.lhdemo.R;
+import com.trust.lhdemo.swipebacklayout.app.SwipeBackActivity;
 
 import jp.wasabeef.glide.transformations.BlurTransformation;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-public class GlideActivity extends BaseActivity {
+public class GlideActivity extends SwipeBackActivity {
     private ImageView imageView,gifImgView,roundImgView,filletImgView,roundGifImgView,
     filletGifImg,blurryImgView,blurrGifImgView,bluerrRoundImgView,bluerrRoundGifImgView,
     bluerrFilletImgView,bluerrFiletGifImgView;

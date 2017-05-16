@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
-        "source": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
+        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\camera.xml",
+        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\camera.xml"
     },
     {
-        "merged": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\camera.xml",
-        "source": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\camera.xml"
+        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
+        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
     }
 ]

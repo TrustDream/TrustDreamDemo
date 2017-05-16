@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Demo\TrustDemo\RxJavaDemo\erwmlib\src\main\assets"/><source path="D:\Demo\TrustDemo\RxJavaDemo\erwmlib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\Demo\TrustDemo\RxJavaDemo\erwmlib\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\MyDemo\RxJavaDemo\erwmlib\src\main\assets"/><source path="E:\MyDemo\RxJavaDemo\erwmlib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\MyDemo\RxJavaDemo\erwmlib\src\debug\assets"/></dataSet></merger>

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
-        "source": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
     },
     {
-        "merged": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\realm_properties",
-        "source": "D:\\Demo\\TrustDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\raw\\realm_properties"
+        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\realm_properties",
+        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\raw\\realm_properties"
     }
 ]

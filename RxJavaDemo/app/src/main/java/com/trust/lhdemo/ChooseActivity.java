@@ -10,9 +10,10 @@ import com.trust.lhdemo.bluetooth.BlueToothActivity;
 import com.trust.lhdemo.glide.GlideActivity;
 import com.trust.lhdemo.ndk.JniActivity;
 import com.trust.lhdemo.rxseries.RxActivity;
+import com.trust.lhdemo.viewPager.ViewPagerActivity;
 
 public class ChooseActivity extends BaseActivity implements View.OnClickListener {
-    private Button blueBtn,rxBtn,QrBtn,ndkBtn,glidBtn;
+    private Button blueBtn,rxBtn,QrBtn,ndkBtn,glidBtn,mBtnPager,mBtnXZ;
     private Context context = ChooseActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +34,16 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
         QrBtn = (Button) findViewById(R.id.home_qr);
         rxBtn = (Button) findViewById(R.id.home_rx);
         glidBtn = (Button) findViewById(R.id.home_glide);
+        mBtnPager = (Button) findViewById(R.id.btn_pager);
+        mBtnXZ = (Button) findViewById(R.id.btn_xuanzhuan);
 
         blueBtn.setOnClickListener(this);
         ndkBtn.setOnClickListener(this);
         QrBtn.setOnClickListener(this);
         rxBtn.setOnClickListener(this);
         glidBtn.setOnClickListener(this);
+        mBtnPager.setOnClickListener(this);
+        mBtnXZ.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +64,12 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
                 break;
             case R.id.home_glide:
                 intent.setClass(context,GlideActivity.class);
+                break;
+            case R.id.btn_pager:
+                intent.setClass(context, ViewPagerActivity.class);
+                break;
+            case R.id.btn_xuanzhuan:
+                intent.setClass(context, RotateActivity.class);
                 break;
         }
         startActivity(intent);

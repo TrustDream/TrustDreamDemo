@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rotate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trust.lhdemo.RotateActivity">
+    <RelativeLayout
+        android:id="@+id/rl_card_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="258dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/imageView_front"
+            android:layout_width="258dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -8,8 +8,9 @@ import android.widget.Button;
 
 import com.trust.lhdemo.BaseActivity;
 import com.trust.lhdemo.R;
+import com.trust.lhdemo.swipebacklayout.app.SwipeBackActivity;
 
-public class RxActivity extends BaseActivity {
+public class RxActivity extends SwipeBackActivity {
     private Button rxJavaBtn,rxRetrofitBtn,rxBindingBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -7,9 +7,10 @@ import android.widget.TextView;
 
 import com.trust.lhdemo.BaseActivity;
 import com.trust.lhdemo.R;
+import com.trust.lhdemo.swipebacklayout.app.SwipeBackActivity;
 import com.trust.lhdemo.tool.L;
 
-public class JniActivity extends BaseActivity {
+public class JniActivity extends SwipeBackActivity {
     private TextView jniTv;
     JniTest jniTest;
     @Override
