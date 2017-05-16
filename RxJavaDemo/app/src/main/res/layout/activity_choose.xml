@@ -50,7 +50,7 @@
     <Button
         android:layout_marginBottom="10dp"
         android:id="@+id/home_rx"
-        android:text="Rx系列"
+        android:text="Rx系列ssssssssss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
