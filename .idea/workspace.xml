@@ -2,61 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb08cd17-be60-4877-83a3-12b08d2ee68c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MyDemo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MyDemo.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/libs/zxing.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/libs/zxing.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/libs/zxing.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/libs/zxing.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/qrcode_scan_line.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/qrcode_scan_line.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/navbar.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/navbar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/compiler.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/encodings.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/gradle.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/misc.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/modules.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/runConfigurations.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/app/build.gradle" afterPath="$PROJECT_DIR$/RxJavaDemo/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build.gradle" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/androidTest/debug/com/ericssonlabs/test/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/androidTest/debug/com/ericssonlabs/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/debug/com/ericssonlabs/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/debug/com/ericssonlabs/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/release/com/ericssonlabs/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/release/com/ericssonlabs/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/r/androidTest/debug/com/ericssonlabs/R.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/r/androidTest/debug/com/ericssonlabs/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-ldpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-ldpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/layout.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/raw.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/raw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/aapt/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/libs/zxing.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/libs/zxing.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/libs/zxing.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/libs/zxing.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/modules.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/r/androidTest/debug/com/ericssonlabs/R.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/r/androidTest/debug/com/ericssonlabs/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/compiler.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/androidTest/debug/com/ericssonlabs/test/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/androidTest/debug/com/ericssonlabs/test/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-release.aar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/navbar.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/navbar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageReleaseResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build.gradle" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/runConfigurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/encodings.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/res/values/values.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/res/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/app/build.gradle" afterPath="$PROJECT_DIR$/RxJavaDemo/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/release/com/ericssonlabs/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/release/com/ericssonlabs/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-ldpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-ldpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/qrcode_scan_line.png" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/qrcode_scan_line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/debug/com/ericssonlabs/BuildConfig.java" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/generated/source/buildConfig/debug/com/ericssonlabs/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/res/merged/androidTest/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/bundles/release/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/raw.json" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/blame/res/androidTest/debug/single/raw.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/misc.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-debug.aar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-release.aar" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/outputs/aar/erwmlib-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/.idea/gradle.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/RxJavaDemo/erwmlib/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
     </list>
     <ignored path="MyDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -131,9 +131,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,6 +152,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,6 +475,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RxJavaDemo/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RxJavaDemo/app/src/main/java/com/trust/lhdemo/ChooseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -493,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
