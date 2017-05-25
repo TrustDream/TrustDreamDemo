@@ -4,7 +4,15 @@
         "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\camera.xml"
     },
     {
+        "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
+        "source": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
+    },
+    {
         "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
         "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\camera.xml",
+        "source": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\layout\\camera.xml"
     }
 ]
