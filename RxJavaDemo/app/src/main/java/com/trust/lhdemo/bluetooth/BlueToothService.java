@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Created by Trust on 2017/4/18.
+ * Created by TrustTinker on 2017/4/18.
  */
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 public class BlueToothService {

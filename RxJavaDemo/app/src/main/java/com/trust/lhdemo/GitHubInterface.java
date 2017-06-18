@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 /**
- * Created by Trust on 2017/3/21.
+ * Created by TrustTinker on 2017/3/21.
  */
 public interface GitHubInterface {
     @GET("{owner}/{repo}/{repos}")

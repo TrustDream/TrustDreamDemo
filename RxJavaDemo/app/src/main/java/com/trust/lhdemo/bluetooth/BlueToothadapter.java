@@ -12,7 +12,7 @@ import com.trust.lhdemo.bean.BlueDeviceBean;
 import java.util.List;
 
 /**
- * Created by Trust on 2017/4/17.
+ * Created by TrustTinker on 2017/4/17.
  */
 public class BlueToothadapter extends RecyclerView.Adapter<BlueToothadapter.ViewHolder>{
     private List<BlueDeviceBean> ml;

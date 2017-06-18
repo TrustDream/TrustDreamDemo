@@ -1,7 +1,7 @@
 package com.trust.lhdemo.tool;
 
 /**
- * Created by Trust on 2017/4/18.
+ * Created by TrustTinker on 2017/4/18.
  */
 public class Config {
 

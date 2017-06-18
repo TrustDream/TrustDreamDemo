@@ -4,7 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * Created by Trust on 2017/4/12.
+ * Created by TrustTinker on 2017/4/12.
  */
 public class T {
     private static Toast toast;

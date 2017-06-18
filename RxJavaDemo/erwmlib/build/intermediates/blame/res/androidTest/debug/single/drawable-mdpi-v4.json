@@ -1,15 +1,7 @@
 [
     {
-        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\navbar.png",
-        "source": "E:\\MyDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\navbar.png"
     },
     {
         "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\navbar.png",

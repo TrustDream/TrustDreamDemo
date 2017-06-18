@@ -10,7 +10,7 @@ import com.trust.lhdemo.bluetooth.BlueToothService;
 import com.trust.lhdemo.tool.L;
 
 /**
- * Created by Trust on 2017/4/18.
+ * Created by TrustTinker on 2017/4/18.
  */
 public class TrustServer extends Service {
     private BlueToothService blueToothService;

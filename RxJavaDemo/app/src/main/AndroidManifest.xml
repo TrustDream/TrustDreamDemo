@@ -19,7 +19,12 @@
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
 
+
+
+
+
     <application
+        android:name=".tinker.TrustApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -39,32 +44,51 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".rxseries.RxActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".bluetooth.BlueToothActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".QRActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".perssion.PerssionActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".bluetooth.BlueDeviceActivity"
-            android:theme="@style/SwipeBack"/>
+        <activity
+            android:name=".rxseries.RxActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".bluetooth.BlueToothActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".QRActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".perssion.PerssionActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".bluetooth.BlueDeviceActivity"
+            android:theme="@style/SwipeBack" />
 
         <service android:name=".server.TrustServer" />
 
         <activity android:name=".BaseActivity" />
-        <activity android:name=".glide.GlideActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".rxseries.RxJavaActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".rxseries.RetrofitActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".rxseries.RxBindingActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".viewPager.ViewPagerActivity"
-            android:theme="@style/SwipeBack"/>
-        <activity android:name=".RotateActivity"
-            android:theme="@style/SwipeBack"></activity>
+        <activity
+            android:name=".glide.GlideActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".rxseries.RxJavaActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".rxseries.RetrofitActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".rxseries.RxBindingActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".viewPager.ViewPagerActivity"
+            android:theme="@style/SwipeBack" />
+        <activity
+            android:name=".RotateActivity"
+            android:theme="@style/SwipeBack" />
+        <activity android:name=".tinker.TinkerActivity"></activity>
+
+
+        <service android:name=".tinker.TrustServer"
+            android:exported="false">
+
+
+        </service>
     </application>
 
 </manifest>

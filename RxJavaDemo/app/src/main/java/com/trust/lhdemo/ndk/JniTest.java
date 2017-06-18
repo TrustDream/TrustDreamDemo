@@ -1,7 +1,7 @@
 package com.trust.lhdemo.ndk;
 
 /**
- * Created by Trust on 2017/4/7.
+ * Created by TrustTinker on 2017/4/7.
  */
 public class JniTest {
     static {

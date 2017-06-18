@@ -35,7 +35,7 @@ JNIEXPORT void JNICALL Java_com_trust_rxjavademo_ndk_JniTest_updateFile
             LOGV("open file success  ");
         }
         //把数据写入文件
-        char data[] ="I'm Trust";
+        char data[] ="I'm TrustTinker";
         int count = fwrite(data,strlen(data),1,file);//写一次
 
         if(count >0){

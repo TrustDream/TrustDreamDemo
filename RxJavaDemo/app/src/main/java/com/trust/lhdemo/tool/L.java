@@ -3,7 +3,7 @@ package com.trust.lhdemo.tool;
 import android.util.Log;
 
 /**
- * Created by Trust on 2017/4/10.
+ * Created by TrustTinker on 2017/4/10.
  */
 public class L {
     private static String TAG = "Lhh_debug";

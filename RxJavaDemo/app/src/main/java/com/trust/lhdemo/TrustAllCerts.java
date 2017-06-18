@@ -12,7 +12,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 /**
- * Created by Trust on 2017/2/27.
+ * Created by TrustTinker on 2017/2/27.
  */
 public class TrustAllCerts implements X509TrustManager {
 

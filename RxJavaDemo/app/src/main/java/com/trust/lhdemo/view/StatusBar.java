@@ -11,7 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 /**
- * Created by Trust on 2017/4/17.
+ * Created by TrustTinker on 2017/4/17.
  */
 public class StatusBar {
     static Window window;

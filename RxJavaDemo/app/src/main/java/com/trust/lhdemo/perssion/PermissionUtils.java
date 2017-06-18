@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Trust on 2017/4/17.
+ * Created by TrustTinker on 2017/4/17.
  */
 public class PermissionUtils {
     private static final String TAG = "lhh";
