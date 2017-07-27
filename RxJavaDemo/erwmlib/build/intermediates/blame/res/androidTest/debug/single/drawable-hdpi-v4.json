@@ -1,10 +1,10 @@
 [
     {
-        "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\qrcode_scan_line.png",
-        "source": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\qrcode_scan_line.png"
+        "merged": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "E:\\Demo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+        "merged": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\qrcode_scan_line.png",
+        "source": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\qrcode_scan_line.png"
     }
 ]

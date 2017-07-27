@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.trust.lhdemo">
+    package="com.trust.demo">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -19,10 +19,6 @@
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
 
-
-
-
-
     <application
         android:name=".tinker.TrustApplication"
         android:allowBackup="true"
@@ -37,13 +33,7 @@
         <service android:name=".QuanXian.MonitorService" />
 
         <activity android:name=".ndk.JniActivity" />
-        <activity android:name=".ChooseActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ChooseActivity"></activity>
         <activity
             android:name=".rxseries.RxActivity"
             android:theme="@style/SwipeBack" />
@@ -81,14 +71,27 @@
         <activity
             android:name=".RotateActivity"
             android:theme="@style/SwipeBack" />
-        <activity android:name=".tinker.TinkerActivity"></activity>
+        <activity android:name=".tinker.TinkerActivity" />
+
+        <service
+            android:name=".tinker.TrustServer"
+            android:exported="false" />
+
+        <activity android:name=".gsonparsing.GsonParsingActivity" />
+        <activity android:name=".main.MainControllActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.Base">
 
 
-        <service android:name=".tinker.TrustServer"
-            android:exported="false">
-
-
-        </service>
+        </activity>
     </application>
 
 </manifest>

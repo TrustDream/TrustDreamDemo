@@ -4,7 +4,7 @@
     android:id="@+id/activity_rotate"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.trust.lhdemo.RotateActivity">
+    tools:context="com.trust.demo.RotateActivity">
     <RelativeLayout
         android:id="@+id/rl_card_root"
         android:layout_width="match_parent"

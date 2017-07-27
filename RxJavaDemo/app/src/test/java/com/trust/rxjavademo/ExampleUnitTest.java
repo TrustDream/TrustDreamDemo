@@ -1,4 +1,4 @@
-package com.trust.lhdemo;
+package com.trust.demo;
 
 import org.junit.Test;
 

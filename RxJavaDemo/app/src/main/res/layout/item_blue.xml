@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="48dp"
     android:gravity="center_vertical"
-    tools:context="com.trust.lhdemo.MainActivity">
+    tools:context="com.trust.demo.MainActivity">
 
     <TextView
         android:id="@+id/item_blue_dvice"

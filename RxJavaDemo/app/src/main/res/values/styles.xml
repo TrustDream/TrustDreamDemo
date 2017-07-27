@@ -16,6 +16,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
     </style>
+
     <style name="SwipeBack" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- 侧滑返回所必须的样式，否则下层Activity黑屏 -->
         <item name="android:windowIsTranslucent">true</item>
@@ -26,5 +27,9 @@
         <!--注意当我们使用API版本为22及以上来编译的时候要去掉前缀android:-->
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="AppTheme.Base.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Base.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
