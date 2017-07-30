@@ -104,15 +104,7 @@ android {
             jniLibs.srcDirs = ['libs']
 
             res.srcDirs = [
-                    'src/main/res/layout/ui/activtiy',
-                    'src/main/res/layout/ui/fragment',
-                    'src/main/res/layout/ui/item',
-                    'src/main/res/layout/ui/tool',
                     'src/main/res/layout/ui',
-                    'src/main/res/layout/coder/activtiy',
-                    'src/main/res/layout/coder/fragment',
-                    'src/main/res/layout/coder/item',
-                    'src/main/res/layout/coder/tool',
                     'src/main/res/layout/coder',
                     'src/main/res/layout',
                     'src/main/res/'];

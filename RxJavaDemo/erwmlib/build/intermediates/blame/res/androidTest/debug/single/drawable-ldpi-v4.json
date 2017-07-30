@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\ic_launcher.png",
         "source": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\ic_launcher.png"
     }

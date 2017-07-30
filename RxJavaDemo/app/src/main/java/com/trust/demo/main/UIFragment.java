@@ -33,6 +33,8 @@ public class UIFragment extends Fragment {
     Unbinder unbinder;
     private Context mContext;
     private UIAdapter uiAdapter;
+    private int [] imgArgs = {R.drawable.ic_qr,R.drawable.ic_glide,R.drawable.ic_card};
+    private String [] msgArgs = {"二维码","Glide","卡片"};
     @Override
     public void onAttach(Context context) {
         mContext = context;
@@ -52,9 +54,10 @@ public class UIFragment extends Fragment {
 
     private void initData() {
         List<UIBean> ml = new ArrayList<>();
-        ml.add(new UIBean(1,"1"));
-        ml.add(new UIBean(2,"2"));
-        ml.add(new UIBean(3,"3"));
+        for (int i = 0; i < imgArgs.length; i++) {
+            ml.add(new UIBean(imgArgs[i],msgArgs[i]));
+        }
+
         uiAdapter.setMl(ml);
         uiAdapter.notifyDataSetChanged();
     }

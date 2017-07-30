@@ -4,7 +4,15 @@
         "source": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\navbar.png"
     },
     {
+        "merged": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "E:\\TrustWork\\Demo\\TrustDream\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\navbar.png",
+        "source": "E:\\TrustDemo\\TrustDreamDemo\\RxJavaDemo\\erwmlib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\navbar.png"
     }
 ]

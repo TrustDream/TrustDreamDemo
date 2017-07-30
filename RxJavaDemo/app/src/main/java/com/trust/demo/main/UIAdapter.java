@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.trust.demo.R;
 
 import java.util.List;
@@ -34,13 +36,15 @@ public class UIAdapter extends BaseRecyclerAdapter {
         UiViewHodler uiViewHodler = (UiViewHodler) holder;
         List<UIBean> uiBeans = ml;
         uiViewHodler.textView.setText(uiBeans.get(position).getMsg());
+        uiViewHodler.logo.setImageResource(uiBeans.get(position).getImgId());
     }
 
     class UiViewHodler extends ViewHolder{
-       TextView textView;
+       TextView textView;ImageView logo;
         public UiViewHodler(View itemView) {
             super(itemView);
             textView = (TextView) itemView.findViewById(R.id.item_uitext);
+            logo = (ImageView) itemView.findViewById(R.id.item_uilog);
         }
     }
 }
