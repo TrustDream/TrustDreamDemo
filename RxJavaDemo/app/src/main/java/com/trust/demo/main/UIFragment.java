@@ -1,6 +1,8 @@
 package com.trust.demo.main;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,7 +15,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.trust.demo.QRActivity;
 import com.trust.demo.R;
+import com.trust.demo.glide.GlideActivity;
+import com.trust.demo.tool.RecyclerViewDivider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,12 +72,30 @@ public class UIFragment extends Fragment {
         uiAdapter.setItemOnClickListener(new BaseRecyclerAdapter.ItemOnClickListener() {
             @Override
             public void itemOnClickListener(View v, int pos, Object msg) {
-                Toast.makeText(mContext,"你点击了"+pos,Toast.LENGTH_LONG).show();
+                intentActivtiy(v,pos,msg);
             }
         });
         GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext,2);
         mFragmentUiRecyclerview.setLayoutManager(gridLayoutManager);
+        mFragmentUiRecyclerview.addItemDecoration(new RecyclerViewDivider(1,Color.RED,1));
+
         mFragmentUiRecyclerview.setAdapter(uiAdapter);
+    }
+
+    private void intentActivtiy(View v, int pos, Object msg) {
+        Intent intent = new Intent();
+        switch (pos){
+            case 0:
+                intent.setClass(mContext, QRActivity.class);
+                break;
+            case 1:
+                intent.setClass(mContext, GlideActivity.class);
+                break;
+            case 2:
+                intent.setClass(mContext, QRActivity.class);
+                break;
+        }
+        mContext.startActivity(intent);
     }
 
     @Override

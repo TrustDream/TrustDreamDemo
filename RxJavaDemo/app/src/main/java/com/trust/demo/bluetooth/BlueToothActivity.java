@@ -86,8 +86,8 @@ public class BlueToothActivity extends SwipeBackActivity implements View.OnClick
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(blueToothadapter);
-        recyclerView.addItemDecoration(new RecyclerViewDivider(this,
-                LinearLayoutManager.HORIZONTAL));
+//        recyclerView.addItemDecoration(new RecyclerViewDivider(this,
+//                LinearLayoutManager.HORIZONTAL));
         blueToothadapter.blueRecyclerOnclik = new BlueToothadapter.BlueRecyclerOnclik(){
 
             @Override

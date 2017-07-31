@@ -33,7 +33,7 @@
         <service android:name=".QuanXian.MonitorService" />
 
         <activity android:name=".ndk.JniActivity" />
-        <activity android:name=".ChooseActivity"></activity>
+        <activity android:name=".ChooseActivity" />
         <activity
             android:name=".rxseries.RxActivity"
             android:theme="@style/SwipeBack" />
@@ -79,17 +79,19 @@
 
         <activity android:name=".gsonparsing.GsonParsingActivity" />
         <activity android:name=".main.MainControllActivity">
+
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.Base"></activity>
+        <activity android:name=".ui.HoverActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.Base">
-
 
         </activity>
     </application>
