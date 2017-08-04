@@ -19,7 +19,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
 
     protected void initViews(){};
     public void initBase() {
-        StatusBar.setColor(this, Color.parseColor("#303F9F"));
+        StatusBar.all(this, Color.parseColor("#000000"));
     }
 
     @Override

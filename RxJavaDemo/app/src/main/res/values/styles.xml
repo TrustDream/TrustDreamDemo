@@ -12,8 +12,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#FA7199</item>
         <item name="colorAccent">@color/colorAccent</item>
+
 
     </style>
 
@@ -22,14 +23,20 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+
+
+    <!--自定义系统style-->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
-        <item name="windowActionBar">false</item>
-        <!--注意当我们使用API版本为22及以上来编译的时候要去掉前缀android:-->
+        <item name="android:windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorStatusLayout</item>
     </style>
 
     <style name="AppTheme.Base.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.Base.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
 
 </resources>

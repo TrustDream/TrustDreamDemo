@@ -7,4 +7,8 @@
     
     <color name="colorTabBarBg">#77aafd</color>
     <color name="selectTextColor">#1883d7</color>
+
+
+
+    <color name="colorStatusLayout">#ff0000</color>
 </resources>
