@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.trust.demo.bluetooth.BlueToothActivity;
-import com.trust.demo.glide.GlideActivity;
-import com.trust.demo.gsonparsing.GsonParsingActivity;
-import com.trust.demo.ndk.JniActivity;
-import com.trust.demo.rxseries.RxActivity;
-import com.trust.demo.tinker.TinkerActivity;
-import com.trust.demo.viewPager.ViewPagerActivity;
+import com.trust.demo.code.bluetooth.BlueToothActivity;
+import com.trust.demo.ui.cardrotation.RotateActivity;
+import com.trust.demo.ui.glide.glide.GlideActivity;
+import com.trust.demo.code.gsonparsing.GsonParsingActivity;
+import com.trust.demo.code.ndk.JniActivity;
+import com.trust.demo.code.rxseries.RxActivity;
+import com.trust.demo.code.tinker.TinkerActivity;
+import com.trust.demo.ui.qr.QRActivity;
+import com.trust.demo.ui.cardrotation.ViewPagerActivity;
 
 public class ChooseActivity extends BaseActivity implements View.OnClickListener {
     private Button blueBtn,rxBtn,QrBtn,ndkBtn,glidBtn,mBtnPager,mBtnXZ,tinkerBtn,gsonParsingBtn;

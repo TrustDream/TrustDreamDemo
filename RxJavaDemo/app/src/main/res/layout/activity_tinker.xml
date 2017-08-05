@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.trust.demo.tinker.TinkerActivity">
+    tools:context=".code.tinker.TinkerActivity">
 
     <TextView
         android:gravity="center"

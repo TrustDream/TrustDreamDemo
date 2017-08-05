@@ -7,17 +7,16 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.trust.demo.QRActivity;
+import com.trust.demo.ui.cardrotation.RotateActivity;
+import com.trust.demo.ui.Coordinator.HoverActivity;
+import com.trust.demo.ui.qr.QRActivity;
 import com.trust.demo.R;
-import com.trust.demo.glide.GlideActivity;
+import com.trust.demo.ui.glide.glide.GlideActivity;
 import com.trust.demo.tool.RecyclerViewDivider;
 
 import java.util.ArrayList;
@@ -38,8 +37,8 @@ public class UIFragment extends Fragment {
     Unbinder unbinder;
     private Context mContext;
     private UIAdapter uiAdapter;
-    private int [] imgArgs = {R.drawable.ic_qr,R.drawable.ic_glide,R.drawable.ic_card};
-    private String [] msgArgs = {"二维码","Glide","卡片"};
+    private int [] imgArgs = {R.drawable.ic_qr,R.drawable.ic_glide,R.drawable.ic_card,R.drawable.ic_collapingtoolbarlayout};
+    private String [] msgArgs = {"二维码","Glide","卡片","CoordinatorLayout"};
     @Override
     public void onAttach(Context context) {
         mContext = context;
@@ -92,8 +91,13 @@ public class UIFragment extends Fragment {
                 intent.setClass(mContext, GlideActivity.class);
                 break;
             case 2:
-                intent.setClass(mContext, QRActivity.class);
+                intent.setClass(mContext, RotateActivity.class);
                 break;
+            case 3:
+                intent.setClass(mContext, HoverActivity.class);
+                break;
+
+
         }
         mContext.startActivity(intent);
     }

@@ -9,6 +9,7 @@
     
     
     <android.support.design.widget.TabLayout
+        android:fitsSystemWindows="true"
         android:id="@+id/maincontroll_tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

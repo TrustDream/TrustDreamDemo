@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    tools:context="com.trust.demo.viewPager.ViewPagerActivity">
-    <com.trust.demo.viewPager.MsgViewPager
+    tools:context=".ui.cardrotation.ViewPagerActivity">
+    <com.trust.demo.ui.cardrotation.viewPager.MsgViewPager
         android:id="@+id/msgviewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,5 +15,5 @@
         android:persistentDrawingCache="animation"
         app:style="fliphorizontal" >
 
-    </com.trust.demo.viewPager.MsgViewPager>
+    </com.trust.demo.ui.cardrotation.viewPager.MsgViewPager>
 </RelativeLayout>

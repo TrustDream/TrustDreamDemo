@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".bluetooth.BlueToothActivity">
+    tools:context=".code.bluetooth.BlueToothActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_blue_tooth_tool_bar"
