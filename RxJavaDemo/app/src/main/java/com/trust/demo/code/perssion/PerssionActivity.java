@@ -3,9 +3,10 @@ package com.trust.demo.code.perssion;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.trust.demo.BaseActivity;
 import com.trust.demo.R;
 
-public class PerssionActivity extends AppCompatActivity {
+public class PerssionActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
